@@ -1,0 +1,61 @@
+Module: Is a container to hold group of functions / classes
+one module is one .js file  (minify) on demand (lazy loading)
+
+savings.js
+current.js
+Home.js
+FD.js
+
+emp.js
+export class EmpComponent{
+    methdos
+}
+
+
+test.js
+import {EmpComponent} from './emp'
+
+Functional component (function) Fat arrow syntax
+   it is called Stateless Functional Component. (SFC) - React.hooks
+   Presentation 
+   Dumb
+
+Class Component (Class)
+   It is called Stateful Functional Component 
+   Container (mother/father)
+   Intelligenent (Smart)
+
+   Containter 
+    - Presentation
+    - Presentation
+
+var x=10
+var y=x // call by value
+y=20
+console.log(x) //10  immutable 
+
+var ob1={x:10}     const store={} == state tree
+var obj2=obj1;
+obj2.x=20;
+console.log(obj1.x) //20  call by ref
+
+Object is mutable (Undo/ Redo)
+
+obj2= Object.assign({},obj1)
+obj2.x=20
+obj1.x=10
+
+obj2={...obj1} spread operator (ES6)
+
+state ==Props  copy given {}
+
+props are immutable  {x:10}
+state is mutable
+
+state tree + Component tree= DOM tree
+ST + CT= DT
+Redux + React = DT
+React is View (MVC)
+
+MC =Redux
+V = React
